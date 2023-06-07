@@ -14,7 +14,7 @@ When running waitMotion it will output one of the following
     * `x_start` and `x_end` values are in the range of 0 - 639
     * `y_start` and `y_end` values are in the range of 0 - 359
 * `clear` Is output when motion in previously detected areas have stopped
-* `Timeout` Whenver no motion has been detected within the time period set when running waitMotion
+* `timeout` Whenver no motion has been detected within the time period set when running waitMotion
  
 A crash and stack trace can be output sometimes when first starting waitMotion up prior to
 any motion being detected.  Once motion is detected, the app will function as expected. Crashes can also
