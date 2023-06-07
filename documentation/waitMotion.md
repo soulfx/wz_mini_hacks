@@ -15,11 +15,10 @@ When running waitMotion it will output one of the following
     * `y_start` and `y_end` values are in the range of 0 - 359
 * `clear` Is output when motion in previously detected areas have stopped
 * `timeout` Whenver no motion has been detected within the time period set when running waitMotion
- 
-A crash and stack trace can be output sometimes when first starting waitMotion up prior to
-any motion being detected.  Once motion is detected, the app will function as expected. Crashes can also
-occur if multiple waitMotions are being run at the same time.  One app will recieve the motion events, while
-the other crashes.
+* `[command] [wait_motion.c] error : wait motion error` outputs when a previous or another waitmotion process
+  has set a timeout, and a new process is attempting to setup another timeout. When the previous timeout
+  or new events are detected, this message will clear itself.  The wait_motion capabilities do not support
+  multiple concurrent readers
 
 Motion Field
 ------------
