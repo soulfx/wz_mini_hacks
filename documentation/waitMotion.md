@@ -51,9 +51,9 @@ by defining the motion sensetivity and the box of the motion detection zone.
 | MMALevel  | Sets the motion sensetivity.  Range is from 2 (Low) to 254 (High).  For example `MMALevel=127` would be 50% motion sensetivity. |
 | MAT       | Toggles the detection zone box. 1 for on, 0 for off. |
 | AASX      | Sets the starting X position for the detection zone box. Range is 0 to 100 |
-| AALX      | Sets the length of the X portion of the detection zone box. Range is 99 - AASX |
+| AALX      | Sets the length of the X portion of the detection zone box. Range is 99 - AASX. When AASX is 0, this can be 100. |
 | AASY      | Sets the starting Y position for the detection zone box. Range is 0 to 100 |
-| AALY      | Sets the length of the Y portion of the detection zone box. Range is 99 - AALY |
+| AALY      | Sets the length of the Y portion of the detection zone box. Range is 99 - AASY. When AASY is 0, this can be 100. |
 
 ```
  (0,0)                           (x,y)
